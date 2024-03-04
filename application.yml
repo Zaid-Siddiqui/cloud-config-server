@@ -1,0 +1,20 @@
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    hostname: Zaid-Siddiqui 
+
+microservice:
+  payment-service:
+    endpoints:
+      endpoint:
+        uri: http://PAYMENT-SERVICE/payment/paymentdone
+  order-service:
+    endpoints:
+      endpoint:
+        uri: http://TICKET-SERVICE/order/bookticket
+
+    

@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/Zaid-Siddiqui/cloud-config-server
+
+
+server:
+  port: 9196
